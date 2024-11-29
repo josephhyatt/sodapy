@@ -403,6 +403,9 @@ class Socrata:
             "$q": kwargs.pop("q", None),
             "$query": kwargs.pop("query", None),
             "$$exclude_system_fields": kwargs.pop("exclude_system_fields", None),
+            "$$client_vars_txt": kwargs.pop("client_vars_txt", None),
+            "$$client_vars_num": kwargs.pop("client_vars_num", None),
+            "$$client_vars_ts": kwargs.pop("client_vars_ts", None),
         }
 
         # Additional parameters, such as field names

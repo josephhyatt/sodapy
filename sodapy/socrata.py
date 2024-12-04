@@ -59,6 +59,7 @@ class Socrata:
 
         # set up the session with proper authentication crendentials
         self.session = requests.Session()
+        self.session.verify = False
         if not app_token:
             logging.warning(
                 "Requests made without an app_token will be"

@@ -551,6 +551,7 @@ class Socrata:
 
         # set a timeout, just to be safe
         kwargs["timeout"] = self.timeout
+        kwargs["verify"] = False
 
         response = getattr(self.session, request_type)(uri, **kwargs)
 
